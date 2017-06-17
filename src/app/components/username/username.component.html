@@ -1,0 +1,38 @@
+<!--<div [hidden]="submitted">-->
+<div class="sign-in-panel">
+  <h1>
+    GitHub
+  </h1>
+  <h3 style="margin-bottom: 0px;">Sign in</h3>
+  <p>to continue to Git</p>
+  <form>
+    
+    <div class="sign-in-row form-group">
+      <div class="floating">
+        <span class='blocking-span'>
+          <input type="text" class="inputText sign-in-textbox form-control form-control-lg" required/>
+          <span class="floating-label">Enter your username</span>
+      </span>
+    </div>
+    </div>
+       <!--<input type="email" class="sign-in-textbox form-control form-control-lg" id="email" placeholder="Enter your username">-->
+    
+  
+    <div class="form-group">
+      <div class="row">
+      <div class="col-sm-6">
+        <label class="label-control"><a href="#">More Options</a></label>
+      </div>
+      <div class="col-sm-6">
+        <span class="pull-right">
+  <a [routerLink]="['/GotoPassword']"> <button type="submit" class="btn btn-primary"  (click)="addnew()">NEXT</button></a>
+          </span>
+      </div>
+      </div>
+    </div>
+  </form>
+</div>
+<!--</div>-->
+<div class="outer-outlet">
+     <router-outlet></router-outlet>
+</div>
